@@ -1,9 +1,12 @@
 <div class="task-item">
   <div class="flex items-center justify-between">
-    <h3>{{task.text}} </h3>
+    <div class="flex items-center">
+      
+      <h3>{{task.text}} </h3> <mat-icon style="margin-left: 8px; color: green; font-size: 16px; display: grid; place-items: center;" *ngIf="task.reminder">radio_button_checked</mat-icon> 
+    </div>
     <button class="btn">
       <mat-icon>clear</mat-icon>
     </button>
   </div>
-  <p>{{task.day}}</p>
+  <p>{{task.day}}</p>  
 </div>
