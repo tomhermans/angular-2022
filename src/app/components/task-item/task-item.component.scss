@@ -9,10 +9,18 @@
     margin: 0;
   }
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    background-color: red;
-    padding: .5rem;
+    background-color: var(--red-5);
+    padding: .25rem;
     color: white;
+    border-radius: 4px;
+    transition: background 0.5s var(--ease-out-1);
+    &:hover {
+      background-color: var(--red-8);
+    }
   }
   &:hover {
     background: #ccc;

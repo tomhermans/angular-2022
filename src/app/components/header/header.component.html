@@ -1,4 +1,9 @@
 <header class="flex items-center justify-between">
-  {{title}} 
+  <div class="flex items-center justify-between">
+    <mat-icon>favorite_border</mat-icon> 
+    <span style="margin-left: 10px">{{title}} </span>
+  </div>
+
+  
   <app-button state="true" bgcolor="blue" text="Add" (btnClick)="toggleAddTask()"></app-button>
 </header>

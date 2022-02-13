@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
+
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; // https://www.positronx.io/angular-material-8-icons-tutorial-with-real-world-examples/
+
+
 @import "https://unpkg.com/open-props";
 
 // [color-scheme="dim"] {
@@ -17,7 +22,7 @@
 
 html, body { 
   background-color: var(--surface1);
-  height: 100%;
+  min-height: 90%;
 }
 body { 
   margin: 0;
@@ -40,3 +45,5 @@ header {
 .justify-between {
   justify-content: space-between;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
