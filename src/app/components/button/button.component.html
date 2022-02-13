@@ -1,0 +1,5 @@
+<button 
+  [ngStyle]="{'background-color':state === 'true' ? bgcolor : '#ddd', 'color':'white' }" 
+  class="btn"
+  (click)="onClick()"
+>{{text}}</button>

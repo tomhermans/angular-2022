@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "https://unpkg.com/open-props";
+
+// [color-scheme="dim"] {
+//   color-scheme: dark;
+//   --brand: var(--brand-dim);
+//   --text1: var(--text1-dim);
+//   --text2: var(--text2-dim);
+//   --surface1: var(--surface1-dim);
+//   --surface2: var(--surface2-dim);
+//   --surface3: var(--surface3-dim);
+//   --surface4: var(--surface4-dim);
+//   --surface-shadow: var(--surface-shadow-dim);
+//   --shadow-strength: var(--shadow-strength-dim);
+// }
+
+html, body { 
+  background-color: var(--surface1);
+  height: 100%;
+}
+body { 
+  margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+ }
+
+button {
+  padding: .75em 1.5em;
+  border: none;
+}
+header {
+  padding: 1rem;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
