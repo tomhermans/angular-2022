@@ -1,0 +1,22 @@
+<div class="tree">
+  <svg id="svg" viewBox="-5 -5 1010 1210" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="500" cy="500" r="500" stroke="#ddd" fill="none" stroke-width="8" />
+    <circle cx="500" cy="500" r="400" stroke="#ddd" fill="none" stroke-width="8" />
+    <line x1="500" y1="0" x2="500" y2="1000" stroke="#ddd" stroke-width="8" />
+    <line y1="500" x1="0" y2="500" x2="1000" stroke="#ddd" stroke-width="8" />
+    <line y1="1500" x1="500" y2="480" x2="500" stroke="brown" stroke-width="70" stroke-linecap="round" />
+
+    <g id="generated">
+      <g *ngFor="let branch of branches" id=`g{{branch.id}}` >
+        <line 
+          id=`line{{branch.id}}` 
+          [attr.x1]="branch.x1"
+          [attr.y1]="branch.y1"
+          [attr.x2]="branch.x2"
+          [attr.y2]="branch.y2"
+          stroke-linecap="round" stroke="black" stroke-width="20px" style="stroke: hsla(87, 90%, 50%, 1);"></line>
+      </g>
+    </g>
+
+  </svg>
+</div>
